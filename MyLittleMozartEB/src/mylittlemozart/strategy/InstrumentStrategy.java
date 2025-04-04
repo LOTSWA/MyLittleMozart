@@ -1,5 +1,7 @@
 package mylittlemozart.strategy;
 
-public interface InstrumentStrategy {
+import javax.sound.midi.*;
 
+public interface InstrumentStrategy {
+	void applyInstrument(Track track, int channel);
 }
