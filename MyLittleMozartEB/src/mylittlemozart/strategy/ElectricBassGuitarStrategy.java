@@ -1,5 +1,5 @@
 package mylittlemozart.strategy;
 
-public class ElectricBassGuitarStrategy {
-
+public class ElectricBassGuitarStrategy implements InstrumentStrategy{
+	
 }

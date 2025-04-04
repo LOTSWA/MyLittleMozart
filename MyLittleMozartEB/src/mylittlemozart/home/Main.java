@@ -1,9 +1,15 @@
 package mylittlemozart.home;
 
+import java.util.midi.*;
+import java.util.List;
+import mylittlemozart.factory.*;
+import mylittlemozart.strategy.*;
+import mylittlemozart.information.*;
+
 public class Main {
 	public static void main(String[] args) {
 		try {
-			List<MidiEventData> midiEvents = MidiCsvParser.parseCsv("C:\songs\mystery_song.csv");
+			List<MidiEventData> midiEvents = MidiCsvParser.parseCsv("C:\\songs\\mystery_song.csv");
 			Sequence sequence = new Sequence(Sequence.PPQ, 384);
 			Track track = sequence.createTrack();
 

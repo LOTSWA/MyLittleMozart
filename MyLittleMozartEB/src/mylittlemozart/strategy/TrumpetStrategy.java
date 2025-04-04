@@ -1,5 +1,5 @@
 package mylittlemozart.strategy;
 
-public class TrumpetStrategy {
-
+public class TrumpetStrategy implements InstrumentStrategy{
+	
 }
