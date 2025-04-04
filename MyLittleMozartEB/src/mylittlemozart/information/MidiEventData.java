@@ -59,6 +59,4 @@ public class MidiEventData {
 	public void setNoteOnOff(int noteOnOff) {
 		this.noteOnOff = noteOnOff;
 	}
-	
-	
 }
