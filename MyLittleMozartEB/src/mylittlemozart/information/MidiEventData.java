@@ -13,6 +13,10 @@ public class MidiEventData {
 		this.noteOnOff = noteOnOff;
 	}
 	
+	public MidiEventData(String string, String string2) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public int getStartEndTick() {
 		return startEndTick;
 	}
