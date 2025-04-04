@@ -7,7 +7,9 @@ import java.util.regex.Pattern;
 import java.util.ArrayList;
 public class MidiCsvParser {
 
-	public static List<MidiEventData> ParseCsv(String path) {
+	
+	public static void main(String[] args) {
+	//public static List<MidiEventData> parseCsv(String path) {
 		// TODO Auto-generated method stub
 		
 		List<MidiEventData> EventList = new ArrayList<MidiEventData>();
@@ -18,7 +20,7 @@ public class MidiCsvParser {
 			while (CSVReader.hasNextLine()) {
 				
 				String data = CSVReader.nextLine();
-				
+				EventList.add(processLine(data));
 				System.out.println(data);
 			}
 			CSVReader.close();
@@ -27,7 +29,13 @@ public class MidiCsvParser {
 			System.out.println("an error occurred.");
 			e.printStackTrace();
 		}
-		return EventList;
+	//	return EventList;
+	}
+	
+	public static MidiEventData processLine(String data) {
+		String[] tokens = data.split(",");
+		 MidiEventData item = new MidiEventData(tokens[0], tokens[1]);
+		return null;
 	}
 
 }
