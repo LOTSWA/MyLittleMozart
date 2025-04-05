@@ -1,5 +1,7 @@
 package mylittlemozart.factory;
 
+import javax.sound.midi.InvalidMidiDataException;
+
 public interface MidiEventFactory 
 
 {
