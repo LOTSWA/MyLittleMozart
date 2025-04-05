@@ -20,5 +20,4 @@ public class LegatoMidiEventFactory implements MidiEventFactory
 		message.setMessage(ShortMessage.NOTE_OFF, channel, note, 0);
 		return new MidiEvent(message, temp);
 	}
-	
 }
