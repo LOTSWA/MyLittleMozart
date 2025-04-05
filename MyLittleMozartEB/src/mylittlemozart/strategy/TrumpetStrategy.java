@@ -17,7 +17,7 @@ public class TrumpetStrategy implements InstrumentStrategy{
 				toolChange.setMessage(ShortMessage.PROGRAM_CHANGE, channel, T, 0);
 			} catch (InvalidMidiDataException e) {
 				// TODO Auto-generated catch block
-				System.err.println("Error with electric bass guitar setting" + e.getMessage());
+				System.err.println("Error with the Trumpet setting" + e.getMessage());
 				e.printStackTrace();
 			}
 			track.add(new MidiEvent(toolChange, 0));

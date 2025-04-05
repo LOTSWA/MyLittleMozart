@@ -17,7 +17,7 @@ public class AcousticGrandPianoStrategy implements InstrumentStrategy{
 				toolChange.setMessage(ShortMessage.PROGRAM_CHANGE, channel, AGP, 0);
 			} catch (InvalidMidiDataException e) {
 				// TODO Auto-generated catch block
-				System.err.println("Error with electric bass guitar setting" + e.getMessage());
+				System.err.println("Error with the Acoustic Grand Piano setting" + e.getMessage());
 				e.printStackTrace();
 			}
 			track.add(new MidiEvent(toolChange, 0));
