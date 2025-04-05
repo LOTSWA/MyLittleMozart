@@ -1,7 +1,9 @@
 package mylittlemozart.factory;
 
-public class LegatoMidiEventFactoryAbstract 
-
+public class LegatoMidiEventFactoryAbstract implements MidiEventFactoryAbstract
 {
-	LegatoMidiEventFactory createfactory();
+	@Override
+	public MidiEventFactory createFactory() {
+	return new LegatoMidiEventFactory();
+	}
 }
