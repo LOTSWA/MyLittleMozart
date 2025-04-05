@@ -1,7 +1,14 @@
 package mylittlemozart.home;
 
-import java.util.midi.*;
+
 import java.util.List;
+
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.Sequence;
+import javax.sound.midi.Sequencer;
+import javax.sound.midi.ShortMessage;
+import javax.sound.midi.Track;
+
 import mylittlemozart.factory.*;
 import mylittlemozart.strategy.*;
 import mylittlemozart.information.*;
