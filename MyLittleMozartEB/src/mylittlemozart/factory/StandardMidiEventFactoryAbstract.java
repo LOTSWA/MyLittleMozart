@@ -1,5 +1,7 @@
 package mylittlemozart.factory;
 
-public class StandardMidiEventFactoryAbstract {
+public class StandardMidiEventFactoryAbstract 
 
+{
+	StandardMidiEventFactory createfactory();
 }
