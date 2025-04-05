@@ -1,7 +1,9 @@
 package mylittlemozart.factory;
 
-public class StandardMidiEventFactoryAbstract 
-
+public class StandardMidiEventFactoryAbstract implements MidiEventFactoryAbstract 
 {
-	StandardMidiEventFactory createfactory();
+	@Override
+	public MidiEventFactory createFactory() {
+		return new StandardMidiEventFactory();
+	}
 }

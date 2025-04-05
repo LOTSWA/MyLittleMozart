@@ -5,9 +5,12 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 import java.util.ArrayList;
+import javax.sound.midi.ShortMessage;
+import java.io.IOException;
+
 public class MidiCsvParser {
 
-	public static List<MidiEventData> ParseCsv(String path) {
+	public static List<MidiEventData> parseCsv(String path) {
 		// TODO Auto-generated method stub
 		
 		List<MidiEventData> EventList = new ArrayList<MidiEventData>();
