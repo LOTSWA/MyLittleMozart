@@ -8,8 +8,8 @@ import java.util.ArrayList;
 public class MidiCsvParser {
 
 	
-	public static void main(String[] args) {
-	//public static List<MidiEventData> parseCsv(String path) {
+	//public static void main(String[] args) {
+	public static List<MidiEventData> parseCsv(String path) {
 		// TODO Auto-generated method stub
 		
 		List<MidiEventData> EventList = new ArrayList<MidiEventData>();
@@ -29,7 +29,7 @@ public class MidiCsvParser {
 			System.out.println("an error occurred.");
 			e.printStackTrace();
 		}
-	//	return EventList;
+	return EventList;
 	}
 	
 	public static MidiEventData processLine(String data) {
