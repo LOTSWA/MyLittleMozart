@@ -7,7 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.sound.midi.ShortMessage;
-
+/**
+ * parses the midi event data from the selected CSV file and converts int a list of 
+ * startendtick, onoff, channel, note, velocity, and instrument
+ */
 public class MidiCsvParser {
 
     public static List<MidiEventData> parseCsv(String pathing) {
