@@ -2,9 +2,16 @@ package mylittlemozart.strategy;
 
 import javax.sound.midi.*;
 
+/**
+ * implementation of the electric bass guitar instrument change based on the value 0
+ */
 public class ElectricBassGuitarStrategy implements InstrumentStrategy{
 	private static final int EBG = 33;
-	
+	/**
+	 * applies the electric bass guitar to the midi channel of 0
+	 * @param track
+	 * @param channel
+	 */
 	@Override
 	public void applyInstrument(Track track, int channel)
 	{

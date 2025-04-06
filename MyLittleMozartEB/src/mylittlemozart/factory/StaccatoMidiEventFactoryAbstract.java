@@ -1,8 +1,8 @@
 package mylittlemozart.factory;
 /**
- * abstract factory that creates instances of Standard midi event factories
+ * abstract factory that creates instances of Staccato midi event factories
  */
-public class StandardMidiEventFactoryAbstract implements MidiEventFactoryAbstract 
+public class StaccatoMidiEventFactoryAbstract implements MidiEventFactoryAbstract
 {
 	/**
 	 * creation of a factory

@@ -5,7 +5,7 @@ package mylittlemozart.factory;
 public class LegatoMidiEventFactoryAbstract implements MidiEventFactoryAbstract
 {
 	/**
-	 * 
+	 * creation of a factory
 	 */
 	@Override
 	public MidiEventFactory createFactory() {

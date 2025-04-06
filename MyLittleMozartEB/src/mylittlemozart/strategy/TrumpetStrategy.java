@@ -5,9 +5,17 @@ import javax.sound.midi.MidiEvent;
 import javax.sound.midi.ShortMessage;
 import javax.sound.midi.Track;
 
+/**
+ * implementation of the trumpet instrument change based on the value 0
+ */
 public class TrumpetStrategy implements InstrumentStrategy{
 	private static final int T = 56;
 	
+	/**
+	 * applies the trumpet to the midi channel of 0
+	 * @param track
+	 * @param channel
+	 */
 	@Override
 	public void applyInstrument(Track track, int channel)
 	{

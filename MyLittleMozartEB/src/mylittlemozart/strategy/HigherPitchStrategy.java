@@ -1,5 +1,7 @@
 package mylittlemozart.strategy;
-
+/**
+ * implementation of the higher pitch modifiaction
+ */
 public class HigherPitchStrategy implements PitchStrategy{
 	
 	@Override

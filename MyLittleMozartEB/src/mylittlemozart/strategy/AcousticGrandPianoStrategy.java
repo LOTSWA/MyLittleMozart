@@ -4,10 +4,16 @@ import javax.sound.midi.InvalidMidiDataException;
 import javax.sound.midi.MidiEvent;
 import javax.sound.midi.ShortMessage;
 import javax.sound.midi.Track;
-
+/**
+ * implementation of the acoustic grand piano instrument change based on the value 0
+ */
 public class AcousticGrandPianoStrategy implements InstrumentStrategy{
 	private static final int AGP = 0;
-	
+	/**
+	 * applies the grand piano to the midi channel of 0
+	 * @param track
+	 * @param channel
+	 */
 	@Override
 	public void applyInstrument(Track track, int channel)
 	{
